@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orcamentos",
+  "info": {
+    "name": "orcamentos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "nome"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/orcamentos",
+      "handler": "orcamentos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/orcamentos/count",
+      "handler": "orcamentos.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/orcamentos/:id",
+      "handler": "orcamentos.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/orcamentos",
+      "handler": "orcamentos.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/orcamentos/:id",
+      "handler": "orcamentos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/orcamentos/:id",
+      "handler": "orcamentos.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
